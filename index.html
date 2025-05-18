@@ -1,93 +1,101 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+	<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="style.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<!-- Introdução -->
-				<section>
-	                <h1>Big Data & Data Science</h1>
-                </section>
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Introdução -->
+			<section data-background-image="https://pixelz.cc/wp-content/uploads/2018/07/modern-data-center-uhd-4k-wallpaper.jpg">
+				<h1 class="mainTitle">Big Data & Data Science</h1>
+			</section>
 
-				<section>
-                    <h2>Big Data</h2>
-                    <p>Big Data é um <b>enorme</b> conjunto de dados complexos que não são possíveis de ser processados com ferramentas convencionais</p>
-                </section>
+			<section>
+				<h2>Big Data</h2>
+				<p>Big Data é um <b>enorme</b> conjunto de dados complexos que não são possíveis de ser processados com
+					ferramentas convencionais</p>
+			</section>
 
-				<section>
-					<h2>Data Science</h2>
-                    <p>Ciência dos dados é o campo que usa estatísticas, algoritmos e computação para extrair <em><b>insights</b></em> de dados</p>
-				</section>
+			<section>
+				<h2>Data Science</h2>
+				<p>Ciência dos dados é o campo que usa estatísticas, algoritmos e computação para extrair
+					<em><b>insights</b></em> de dados</p>
+			</section>
 
-				<!-- Desenvolvimento -->
-				<section>
+			<!-- Desenvolvimento -->
+			<section>
 
-				</section>
-				
-				<!-- Conclusão -->
-				<section>
-					<table>
-						<tr>
-							<th>Vantagens</th>
-							<th>Limitações</th>
-						</tr>
+			</section>
 
-						<tr>
-							<td>Decisões mais informadas</td>
-							<td>Necessidade de infraestrutura robusta</td>
-						</tr>
+			<!-- Conclusão -->
+			<section>
+				<table>
+					<tr>
+						<th>Vantagens</th>
+						<th>Limitações</th>
+					</tr>
 
-						<tr>
-							<td>Eficiência operacional aprimorada</td>
-							<td>Privacidade e segurança de dados</td>
-						</tr>
+					<tr>
+						<td>Decisões mais informadas</td>
+						<td>Necessidade de infraestrutura robusta</td>
+					</tr>
 
-						<tr>
-							<td>Experiências personalizadas para cliente</td>
-							<td>Dependência de profissionais qualificados</td>
-						</tr>
-					</table>
-				</section>
+					<tr>
+						<td>Eficiência operacional aprimorada</td>
+						<td>Privacidade e segurança de dados</td>
+					</tr>
 
-				<section>
-					<h2>Tendências Futuras</h2>
-					<ul>
-						<li>Integração crescente com Inteligência Artificial</li>
-						<li>Aumento do uso de análise preditiva e prescritiva</li>
-						<li>Expansão da análise de dados em tempo real.</li>
-					</ul>
-				</section>
+					<tr>
+						<td>Experiências personalizadas para cliente</td>
+						<td>Dependência de profissionais qualificados</td>
+					</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>Tendências Futuras</h2>
+				<ul>
+					<li>Integração crescente com Inteligência Artificial</li>
+					<li>Aumento do uso de análise preditiva e prescritiva</li>
+					<li>Expansão da análise de dados em tempo real.</li>
+				</ul>
+			</section>
 
 
-			</div>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			width: 1920,
+			height: 1080,
+			margin: 0.1,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			minScale: 0.2,
+			maxScale: 1,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 </html>
