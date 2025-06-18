@@ -1,0 +1,231 @@
+.s1 {
+    /* height: 100%; */
+    /* border: 1px solid; */
+    text-align: left;
+
+}
+
+.s1 {
+    white-space: pre-line;
+}
+
+.s1 p{
+    /* position: absolute; */
+    bottom: 50px;
+    left: 120px;
+    padding-left: 22px;
+}
+
+/* ------------------------------------------------ */
+
+.s2 li, .s2 h4{
+    display: inline;
+    margin: 20px;
+    color: var(--secondary);
+}
+
+.s2 ul{
+    margin-top: 30px;
+}
+
+/* ------------------------------------------------ */
+
+
+.s3 ul{
+    list-style: none;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+    /* border: 1px red solid; */
+}
+
+.s3 h3 {
+    word-spacing: 7px;
+    letter-spacing: 1px;
+}
+
+.s3 .material-symbols-outlined{
+    color: var(--secondary);
+    font-size: 2em;
+}
+
+.s3 ul div{
+    border: 2px  solid var(--secondary);
+    border-radius: 30px;
+    margin: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.s3 h4 {
+    margin-top: 10px;
+    color: var(--secondary);
+
+}
+
+.s3 p {
+    text-wrap: balance;
+    font-size: .8em;
+}
+
+
+/* ______________________________________________________________________________________ */
+
+
+.s4{
+    font-size: .8em;
+}
+
+th, td{
+    text-align: left;
+    padding: 30px;
+}
+
+/* _____________________________________________ */
+
+.s5 h4{
+    color: var(--foreground);
+    text-transform: none;
+    font-weight: normal;
+}
+
+/* _________________________________________ */
+
+
+.s6 ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+
+.s6 ul div{
+    /* border: 2px  solid var(--secondary); */
+    /* border-radius: 30px; */
+    margin: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.s6 small{
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+
+.s6 .netflix {
+    color: #e50914;
+}
+
+.s6 .ubereats {
+    color: #06c167;
+}
+
+
+/* ________________________ */
+
+.s7 .fragment-fade-out.visible.current-fragment
+.s7 .fragment-fade-in.visible.current-fragment
+{
+    transition: opacity 10.5s ease;
+}
+
+.s7 .fragment.fade-out.visible.current-fragment {
+    display: none !important;
+}
+
+.s7 .container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+
+.s7 .container div {
+    margin-bottom: 100px;
+}
+
+.s7 p {
+    color: var(--secondary)
+}
+
+.s7 img {
+    height: 80px;
+    margin: 15px;
+}
+
+.s7 div {
+    /* border: 2px  solid var(--secondary); */
+    /* border-radius: 30px; */
+}
+
+.s7 small {
+    font-size: 0.em;
+}
+
+/* _____________________________ */
+
+.s8 .big-img {
+    height: fit-content;
+}
+
+.s8 .imgs img{
+    padding: 100px;
+}
+
+.reveal .backgrounds iframe{
+    filter: blur(20px);
+    transition: filter 0.75s ease;
+    pointer-events: none;
+    nav-index: -1;
+}
+
+
+.reveal.unblur-background .backgrounds iframe {
+    pointer-events: auto;
+    filter: blur(0);
+}
+
+.overlay-content {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.reveal.unblur-background .overlay-content {
+    pointer-events: none;
+}
+
+
+
+.sdemo{
+    height: 100%;
+    /* border: red solid; */
+    top: 0;
+}
+
+.background{
+    /* backdrop-filter: blur(100px); */
+    height: 100%;
+    /* background-color: red; */
+}
+
+.sdemo h1{
+    position: absolute;
+    top: 0;
+}
+
+
+
+img{
+    height: 100px;
+}
+
+td{
+    max-width: 800px;
+    vertical-align: middle;
+}
+
+table{
+    border: 1px solid;
+}

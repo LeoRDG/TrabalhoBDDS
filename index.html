@@ -9,102 +9,291 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="base_style.css">
+	<link rel="stylesheet" href="slides.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=database" /> -->
 
 	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<!-- <link rel="stylesheet" href="plugin/highlight/monokai.css"> -->
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<!-- Introdução -->
-			<section>
-				<h1>Big Data & Data Science</h1>
+			<section class="s1">
+				<h1>BIG DATA
+					<small>&</small>
+					DATA SCIENCE
+				</h1>
 				<p>Leonardo Rodrigues</p>
 			</section>
 
-			<section>
-				<div>
-					<br>
-					<h3>O que é Big Data?</h3>
-					<p>Big Data são conjuntos de dados <strong>enormes</strong> e <strong>complexos</strong>, o que os
-						tornam difícilmente processados com o uso de ferramentas convencionais, exigindo ferramentas e
-						técnicas avançadas.</p>
 
-					<br><br>
-
-					<h3>O que é Data Science?</h3>
-					<p>Ciência dos dados é o campo que usa estatísticas, algoritmos e computação para extrair
-						<em><b>insights</b></em> de dados
-					</p>
-
-					<br>
-					<p>Sem dados, não há análise; sem análise, dados são inúteis.
-					</p>
-
-				</div>
-
-			</section>
-
-			<section>
+			<section class="s2" data-auto-animate>
+				<!-- https://tdwi.org/articles/2017/02/08/10-vs-of-big-data.aspx -->
 				<h2>Big Data</h2>
-			</section>
+				<p>Big Data são conjuntos de dados <strong>enormes</strong> e <strong>complexos</strong>, que exigem
+					ferramentas e técnicas avançadas para armazenamento, processamento e análise. São caracterizados
+					por 5 Vs.</p>
+				<p></p>
 
-
-			<section>
-				<h2>Data Science</h2>
-				<p>Ciência dos dados é o campo que usa estatísticas, algoritmos e computação para extrair
-					<em><b>insights</b></em> de dados
-				</p>
-			</section>
-
-			<!-- Desenvolvimento -->
-			<section>
-				<h2>Funcionalidades Principais</h2>
 				<ul>
-					<li>Suporte à decisão baseado em dados.</li>
-					<li>Previsão de tendências e comportamentos.</li>
-					<li>Personalização de serviços e produtos</li>
-					<li>Otimização de processos operacionais</li>
+					<li>
+						<h4>Volume</h4>
+					</li>
+					<li>
+						<h4>Velocidade</h4>
+					</li>
+					<li>
+						<h4>Variedade</h4>
+					</li>
+					<li>
+						<h4>Veracidade</h4>
+					</li>
+					<li>
+						<h4>Valor</h4>
+					</li>
 				</ul>
 			</section>
 
-			<section>
-				<h2>Ferramentas</h2>
-				<table>
-					<tr class="fragment" data-fragment-index="1">
-						<td><img src="img/Hadoop.png" alt="Hadoop"></td>
+			<section class="s3" data-auto-animate>
+				<h3>Os 5 V<small>s</small> da Big Data</h3>
+				<ul>
+					<li>
+						<div>
+							<i class="material-symbols-outlined">database</i>
+							<h4>Volume</h4>
+							<p>Refere-se à quantidade massiva de dados armazenados e processados.</p>
+						</div>
+					</li>
 
-						<td>Armazenamento e processamento distribuído de grandes volumes </td>
+					<li>
+						<div>
+							<i class="material-symbols-outlined">rocket_launch</i>
+							<h4>Velocidade</h4>
+							<p>Rapidez na geração, coleta e análise de dados em tempo real.</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<i class="material-symbols-outlined">category</i>
+							<h4>Variedade</h4>
+							<p>Diferentes formatos (texto, vídeo, sensores) e fontes de dados.</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<i class="material-symbols-outlined">fact_check</i>
+							<h4>Veracidade</h4>
+							<p>Confiabilidade e qualidade das informações coletadas.</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<i class="material-symbols-outlined">finance_mode</i>
+							<h4>Valor</h4>
+							<p>Capacidade de transformar dados em insights úteis para decisões.</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="s4">
+				<h3>Big Datas Acessíveis</h3>
+				<table>
+					<tr>
+						<!-- https://commoncrawl.org/blog/may-2025-crawl-archive-now-available -->
+						<td><a target="_blank" href="https://commoncrawl.org/">Common Crawl</a></td>
+						<td>A Common Crawl é uma enorme base de dados com cerca de 2,5 Bilhões de páginas da web.</td>
 					</tr>
-					<tr class="fragment" data-fragment-index="2">
-						<td><img src="https://pnghq.com/wp-content/uploads/2023/02/apache-spark-logo-white-png-8042-1536x799.png"
-								alt="Spark"></td>
-						<td>Processamento de dados em tempo ral com alta performance.</td>
+
+					<tr>
+						<td><a target="_blank"
+								href="https://multimediacommons.wordpress.com/yfcc100m-core-dataset/">YFCC100M</a></td>
+						<td>O YFCC100M uma coleção de 100 milhões de fotos e vídeos para uso público e gratuito.</td>
 					</tr>
-					<tr class="fragment" data-fragment-index="3">
-						<td><img src="https://logodownload.org/wp-content/uploads/2019/10/python-logo-2.png"
-								alt="Python"></td>
-						<td rowspan=2>Linguagens de programação amplamente utilizadas para análise de dados e
-							desenvolvimento de modelos.</td>
+
+					<tr>
+						<td><a target="_blank" href="https://wiki.openstreetmap.org/wiki/Planet.osm">OpenStreetMaps</a>
+						</td>
+						<td>OpenStreetMap é um mapa open source gratuito e colaborativo que disponibiliza dados
+							geográficos
+							detalhados do mundo inteiro</td>
 					</tr>
-					<tr class="fragment" data-fragment-index="3">
-						<td><img src="https://workingnation.com/wp-content/uploads/2018/05/R_logo.svg_.png" alt="R">
+
+					<tr>
+						<td>
+							<a target="_blank" href="https://api.nasa.gov/">NASA APIs</a>
+							<br>
+							<a target="_blank" href="https://data.nasa.gov/dataset/">NASA Datasets</a>
+						</td>
+						<td>A NASA oferece grandes volumes de dados científicos e imagens de satélites acessíveis ao
+							público, permitindo pesquisas e análises em áreas como clima, astronomia e meio ambiente.
 						</td>
 					</tr>
+
 
 				</table>
 			</section>
 
-			<section>
+
+			<section class="s5" data-auto-animate>
+				<h2>Data Science</h2>
+				<p>Data Science ou Ciência dos Dados é área que usa estatística, algoritmos e computação para
+					extrair <strong>insights</strong> valiosos a partir de grandes volumes de dados0.
+				</p>
+				<!-- <br>
+				<p>Sem dados, não há análise; sem análise, dados são inúteis.
+				</p> -->
+				<br><br>
+				<h3>Funcionalidades Principais</h3>
+				<ul>
+					<li>
+						<h4>Suporte à decisão.</h4>
+					</li>
+					<li>
+						<h4>Previsão de tendências.</h4>
+					</li>
+					<li>
+						<h4>Personalização de serviços.</h4>
+					</li>
+					<li>
+						<h4>Otimização de processos operacionais.</h4>
+					</li>
+				</ul>
+			</section>
+
+			<section class="s6" data-auto-animate>
+				<!-- https://www.geeksforgeeks.org/data-science/how-netflix-uses-data-science/ -->
+				<!-- https://builtin.com/data-science/data-science-applications-examples -->
+				<ul>
+					<li>
+						<div>
+							<h4>Suporte à decisão.</h4>
+							<p>É o uso de dados, modelos e ferramentas analíticas para fundamentar escolhas estratégicas
+								ou operacionais.
+
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<h4>Previsão de tendências.</h4>
+							<p>
+								Envolve algoritmos de Machine Learning para antecipar comportamentos futuros com base em
+								padrões históricos.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<h4>Personalização de serviços.</h4>
+							<p>
+								É a adaptação de produtos, conteúdo ou experiências a preferências individuais, usando
+								análise de comportamento.
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div>
+							<h4>Otimização de processos operacionais.</h4>
+							<p>
+								Uso de algoritmos para melhorar eficiência e reduzir custos em processos internos.
+							</p>
+
+						</div>
+					</li>
+				</ul>
+				<br>
+				<h4>Exemplos</h4>
+				<ul>
+					<li><small><strong class="netflix">Netflix</strong> analisa hábitos dos usuários e tendências a
+							partir de modelos avançados tanto para decidir quais filmes e séries produzir quanto para
+							personalizar o que cada usuário é recomendado.</small>
+					</li>
+
+					<li><small><strong class="ubereats">UberEats</strong> combina machine learning, modelagem
+							estatística e dados meteorológicos para prever impacto tempestades ou feriados no tráfego e
+							otimizar o processo de entrega.</small>
+					</li>
+				</ul>
+			</section>
+
+			<section class="s7">
+				<!-- https://dataavenue.com.br/blog/as-20-ferramentas-essenciais-para-profissionais-de-dados/ -->
+				<h3>Principais Ferramentas</h3>
+				<p class="fragment fade-out" data-fragment-index="1">Devido à complexidade do assunto, ferramentas convencionais como planilhas
+					eletrônicas não são suficientes para lidar com grandes volumes de dados ou extrair insights
+					avançados de forma eficiente. Sendo necessário ferramentas especializadas: </p>
+
+				<div class="fragment fade-in container" data-fragment-index="1">
+					<div>
+						<p>Processamento</p>
+						<img src="img/Hadoop.png" alt="Hadoop">
+						<img src="https://pnghq.com/wp-content/uploads/2023/02/apache-spark-logo-white-png-8042-1536x799.png">
+						<img src="img/kafka-svgrepo-com.svg" alt="">
+						<br>
+						<small>Ferramentas para coletar e processar grandes volumes de dados.</small>
+					</div>
+					
+					<div>
+						<p>Linguagens de Programação</p>
+						<img src="https://logodownload.org/wp-content/uploads/2019/10/python-logo-2.png" alt="Python">
+						<img src="https://workingnation.com/wp-content/uploads/2018/05/R_logo.svg_.png" alt="R">
+						<img src="" alt="SQL">
+						<br>
+						<small>Linguagens amplamente utilizadas para análise de dados e
+							desenvolvimento de modelos.</small>
+					</div>
+
+					<div>
+						<p>Bibliotecas</p>
+						<img src="https://spark.apache.org/images/numpy.png" alt="">
+						<img src="img/pytorch-logo.svg" alt="">
+						<img src="img/TensorFlow.svg" alt="">
+						<img src="https://pandas.pydata.org/static/img/pandas_secondary_white.svg" alt="">
+						<br>
+						<small>Bibliotecas que facilitam a manipulação de dados e bibliotecas para construção de 
+							modelos de machine learning e deep learning</small>
+					</div>
+
+					<div>
+						<p>Bancos de Dados</p>
+						<img src="img/mysql-svgrepo-com(1).svg" alt="">
+						<img src="img/pngwing.com.png" alt="">
+						<img src="img/mongodb-svgrepo-com.svg" alt="">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/419px-Cassandra_logo.svg.png?20130314070131" alt="">
+						<br>
+						<small>Bancos de Dados estruturados e não estruturados</small>
+					</div>
+				</div>
+
+				</table>
+			</section>
+
+			<section class="s8">
 				<h2>infraestrutura Necessária</h2>
 				<ul>
 					<li>Armazenamento em nuvem ou servidores locais robustos.</li>
-					<li>Plataformas de processamento de dados em grande escala.</li>
-					<li>Ferramentas de visualização e análise de dados.</li>
 				</ul>
-			</section>	
+				<div>
+					<img class="big-img" src="https://i.dailymail.co.uk/i/pix/2012/10/17/article-2219188-158CE597000005DC-42_964x507.jpg" alt="">
+					<div class="imgs">
+						<img src="img/Amazon_Web_Services_Logo.svg" alt="">
+						<img src="img/Google_Cloud_logo.svg" alt="">
+						<img src="img/Microsoft_Azure_Logo.svg" alt="">
+					</div>
+				</div>
+			</section>
 
 			<section>
 				<h2>Aplicações no mercado</h2>
@@ -116,16 +305,11 @@
 				</ul>
 			</section>
 
-			<section>
-				<h1>Demonstração Prática</h1>
-				<iframe style="width: 100%" height="100%" src="https://xle00.github.io/verPaises/"
-					frameborder="0"></iframe>
-			</section>
-
-
-
-
-
+			
+			
+			
+			
+			
 			<!-- Conclusão -->
 			<section>
 				<table>
@@ -133,24 +317,24 @@
 						<th>Vantagens</th>
 						<th>Limitações</th>
 					</tr>
-
+					
 					<tr>
 						<td>Decisões mais informadas</td>
 						<td>Necessidade de infraestrutura robusta</td>
 					</tr>
-
+					
 					<tr>
 						<td>Eficiência operacional aprimorada</td>
 						<td>Privacidade e segurança de dados</td>
 					</tr>
-
+					
 					<tr>
 						<td>Experiências personalizadas para cliente</td>
 						<td>Dependência de profissionais qualificados</td>
 					</tr>
 				</table>
 			</section>
-
+			
 			<section>
 				<h2>Tendências Futuras</h2>
 				<ul>
@@ -159,15 +343,46 @@
 					<li>Expansão da análise de dados em tempo real.</li>
 				</ul>
 			</section>
-
-
+			
+			<section class="sdemo" data-id="blur-section" data-background-interactive
+				data-background-iframe="https://eyes.nasa.gov/apps/asteroids/#/home">
+				<div class="fragment fade-out overlay-content">
+					<h3>Demonstração</h3>
+					<a target="_blank" href="https://eyes.nasa.gov/apps/asteroids/#/home">NASA Eyes on Asteroids</a>
+				</div>
+			</section>
+			
 		</div>
 	</div>
-
+	
+	
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	
+	<script>
+		// Blur / Unblur demo bg
+		
+		Reveal.on('fragmentshown', event => {
+			if (event.fragment.closest('section')?.dataset.id === 'blur-section') {
+				document.querySelector('.reveal').classList.add('unblur-background')
+			}
+		})
+		
+		Reveal.on('fragmenthidden', event => {
+			if (event.fragment.closest('section')?.dataset.id === 'blur-section') {
+				document.querySelector('.reveal').classList.remove('unblur-background')
+			}
+		})
+		
+		Reveal.on('slidechanged', event => {
+			if (event.previousSlide?.dataset.id === 'blur-section') {
+				document.querySelector('.reveal').classList.remove('unblur-background')
+			}
+		})
+	</script>
+
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
@@ -180,11 +395,15 @@
 			minScale: 0.2,
 			maxScale: 1,
 			hash: true,
+			slideNumber: true,
 
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script>
+
+
+
 </body>
 
 </html>
