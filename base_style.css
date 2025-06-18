@@ -135,3 +135,11 @@ a:hover{
     height: 10px;
     color: var(--primary);
 }
+
+.reveal .slide-number {
+    font-weight: bold;
+    color: var(--primary);
+    right: 47px;
+    bottom: 10px;
+    position: fixed;
+}
